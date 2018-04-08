@@ -8,14 +8,27 @@
   color: #fff;
   text-transform: uppercase;
   border-radius: 2px;
+  transition: ease-out 0.3s;
   
   &--red {
     border: 1px solid rgba(198, 107, 109, 0.7);
     background-color: rgba(198, 107, 109, 0.8);
+    
+    &:hover,
+    &:active {
+      background-color: rgba(198, 107, 109,1);
+      transition: ease-out 0.3s;
+    }
   }
   
   &--blue {
     border: 1px solid rgba(113, 184, 160, 0.7);
     background-color: rgba(113, 184, 160, 0.5);
+    
+    &:hover,
+    &:active {
+      background-color: rgba(113, 184, 160, 1);
+      transition: ease-out 0.3s;
+    }
   }
 }
