@@ -465,14 +465,17 @@ button {
   margin-right: 40px;
 }
 .promo__info {
-  margin-top: 140px;
+  margin-top: 150px;
   text-align: center;
 }
 .promo__title {
+  margin-top: 10px;
+  margin-bottom: 72px;
   color: #fff;
   font-size: 24px;
   line-height: 48px;
   text-transform: uppercase;
+  letter-spacing: normal;
 }
 .promo__wrap {
   display: -webkit-box;
@@ -487,7 +490,7 @@ button {
 }
 .header {
   padding-top: 35px;
-  padding-left: 85px;
+  padding-left: 105px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -519,7 +522,7 @@ button {
   background-image: url(../img/icon-phone.png);
 }
 .header__mail {
-  margin-left: 80px;
+  margin-left: 90px;
 }
 .header__mail::before {
   background-image: url(../img/icon-mail.png);
@@ -564,6 +567,7 @@ button {
 .logo p {
   max-width: 175px;
   margin-top: 0;
+  margin-bottom: 8px;
   margin-left: 35px;
   font-weight: 700;
   font-size: 18px;
@@ -643,6 +647,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   height: 100px;
+  padding-top: 5px;
   text-transform: uppercase;
   color: #666666;
   font-size: 18px;
@@ -660,26 +665,30 @@ button {
   color: #c66b6d;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 .subtitle {
   margin-top: 0;
+  margin-bottom: 10px;
   font-size: 24px;
   font-weight: 600;
   line-height: 48px;
   color: #c66b6d;
+  letter-spacing: 0.05em;
 }
 .subtitle--center {
   text-align: center;
 }
 .feature {
-  padding-top: 70px;
-  padding-bottom: 75px;
+  padding-top: 60px;
+  padding-bottom: 78px;
   background-image: url(../img/bg-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .feature__wrap {
+  padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -689,6 +698,16 @@ button {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.feature__wrap img {
+  display: block;
+  padding-top: 10px;
+}
+.feature__wrap p {
+  margin-top: 0;
+}
+.feature__wrap .feature__comment {
+  margin-top: 25px;
 }
 .feature__info {
   width: 568px;
@@ -703,7 +722,7 @@ button {
 .feature__comment::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   width: 39px;
   height: 35px;
@@ -712,21 +731,21 @@ button {
 }
 .benefits {
   padding-top: 20px;
-  padding-bottom: 20px;
   background-image: url(../img/bg-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .benefits__list {
+  margin-top: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -735,7 +754,7 @@ button {
 }
 .benefits__item {
   width: 33%;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -745,6 +764,12 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.benefits__item:nth-child(3n) {
+  padding-left: 20px;
+}
+.benefits__item:nth-child(3n) p {
+  max-width: 260px;
 }
 .benefits__item p {
   max-width: 300px;
@@ -773,14 +798,15 @@ button {
   background-size: contain;
 }
 .test {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
   background-image: url(../img/bg-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .test__list {
+  margin-top: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,6 +820,9 @@ button {
           align-items: stretch;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+}
+.test__list--sindrom {
+  margin-top: 35px;
 }
 .test__item {
   width: 383px;
@@ -820,7 +849,7 @@ button {
 }
 .test__name {
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
   font-size: 30px;
   font-weight: 600;
   line-height: 48px;
@@ -860,11 +889,12 @@ button {
   transition: ease-out 0.3s;
 }
 .test__comment {
+  margin-top: 35px;
   text-align: center;
   font-size: 18px;
 }
 .order {
-  padding-top: 40px;
+  padding-top: 17px;
   padding-bottom: 100px;
   background-image: url(../img/bg-4.jpg);
   background-repeat: no-repeat;
@@ -875,6 +905,8 @@ button {
   color: #666666;
 }
 .order__text {
+  margin-top: 55px;
+  margin-bottom: 60px;
   text-align: center;
   color: #fff;
   font-size: 24px;
@@ -910,7 +942,7 @@ button {
   transition: ease-out 0.3s;
 }
 .question {
-  padding-top: 70px;
+  padding-top: 55px;
   padding-bottom: 100px;
   background-image: url(../img/bg-2.jpg);
   background-repeat: no-repeat;
@@ -918,7 +950,7 @@ button {
   background-size: cover;
 }
 .question__form {
-  margin-top: 80px;
+  margin-top: 75px;
 }
 .question__input {
   width: 100%;
@@ -927,6 +959,7 @@ button {
   padding: 0 40px;
   color: #666666;
   font-size: 18px;
+  letter-spacing: 0.05em;
   background-color: #f0f0f0;
 }
 .question__input::-webkit-input-placeholder {
@@ -949,15 +982,17 @@ button {
 }
 .question__area {
   display: block;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
   padding: 10px 40px;
   width: 100%;
   height: 115px;
+  min-height: 115px;
   max-width: 100%;
   min-width: 100%;
   color: #666666;
   font-size: 18px;
   border: none;
+  outline: none;
   background-color: #f0f0f0;
 }
 .question__btn {
@@ -978,7 +1013,7 @@ button {
   transition: ease-out 0.3s;
 }
 .footer {
-  padding-top: 50px;
+  padding-top: 60px;
   padding-bottom: 45px;
   background-color: #f0f0f0;
 }
@@ -993,6 +1028,9 @@ button {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+.footer__block--nav {
+  padding-left: 50px;
+}
 .footer__title {
   margin-top: 0;
   color: #c66b6d;
@@ -1005,9 +1043,9 @@ button {
 }
 .footer__contacts {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   position: relative;
-  padding-left: 40px;
+  padding-left: 45px;
   color: #666;
   font-style: normal;
   letter-spacing: 0.075em;
@@ -1039,12 +1077,16 @@ button {
   height: 20px;
   background-image: url(../img/icon-location.png);
 }
+.footer__list {
+  margin-top: -8px;
+}
 .footer__item {
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 .footer__link {
   color: #666666;
   font-size: 14px;
+  letter-spacing: 0.01em;
 }
 .footer__link:hover,
 .footer__link:active,
@@ -1062,6 +1104,7 @@ button {
   background-size: contain;
 }
 .social {
+  margin-top: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1073,9 +1116,9 @@ button {
           align-items: center;
 }
 .social img {
-  width: 18px;
+  width: 20px;
   height: auto;
 }
 .social__item {
-  margin-right: 30px;
+  margin-right: 40px;
 }
