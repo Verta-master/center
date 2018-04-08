@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Неинвазивный пренатальный тест</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -175,18 +176,18 @@
     <div class="wrapper footer__wrap">
       <div class="footer__block">
         <p class="footer__title">Контакты</p>
-        <a href="Tel:+79161535652" class="footer__phone">+7 916 153 56 52</a>
-        <a href="mailto:balashov.stanislav.92@gmail.com" class="footer__mail">balashov.stanislav.92@gmail.com</a>
-        <address>Москва, ул. Смоленская, 24/7</address>
+        <a href="Tel:+79161535652" class="footer__contacts footer__contacts--phone">+7 916 153 56 52</a>
+        <a href="mailto:balashov.stanislav.92@gmail.com" class="footer__contacts footer__contacts--mail">balashov.stanislav.92@gmail.com</a>
+        <address class="footer__contacts footer__contacts--address">Москва, ул. Смоленская, 24/7</address>
         <ul class="social">
           <li class="social__item">
-            <a href="#"><img src="img/icon-twitter.svg" alt="Twitter" width="57" height="57"></a>
+            <a href="#"><img src="img/icon-twitter.svg" alt="Twitter" width="18" height="18"></a>
           </li>
           <li class="social__item">
-            <a href="#"><img src="img/icon-vk.svg" alt="Vkontakte" width="30" height="30"></a>
+            <a href="#"><img src="img/icon-vk.svg" alt="Vkontakte" width="18" height="18"></a>
           </li>
           <li class="social__item">
-            <a href="#"><img src="img/icon-facebook.svg" alt="Facebook" width="57" height="57"></a>
+            <a href="#"><img src="img/icon-facebook.svg" alt="Facebook" width="18" height="18"></a>
           </li>
         </ul>
       </div>
@@ -209,9 +210,14 @@
       </div>
       <div class="footer__block">
         <p class="footer__title footer__title--right">Как нас найти</p>
-        <a href="#" class="footer__map"></a>
+        <a data-fancybox data-type="iframe" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A9aff0ace5a0701fda5bd89430e1e3be767ba3f97dc56601e10d6220ddb64238b&amp" href="javascript:;" class="footer__map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9aff0ace5a0701fda5bd89430e1e3be767ba3f97dc56601e10d6220ddb64238b&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </a>
       </div>
     </div>
   </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 </body>
 </html>
