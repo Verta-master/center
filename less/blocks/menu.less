@@ -1,0 +1,32 @@
+.menu {
+  width: 100%;
+  margin-top: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__item {
+  flex-grow: 1;
+}
+
+.menu__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-transform: uppercase;
+  color: #666666;
+  font-size: 18px;
+  text-align: center;
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: #c66b6d;
+  }
+}
