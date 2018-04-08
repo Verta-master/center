@@ -1,6 +1,6 @@
 .feature {
-  padding-top: 70px;
-  padding-bottom: 75px;
+  padding-top: 60px;
+  padding-bottom: 78px;
   background-image: url(../img/bg-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -8,9 +8,23 @@
 }
 
 .feature__wrap {
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  
+  img {
+    display: block;
+    padding-top: 10px;
+  }
+  
+  p {
+    margin-top: 0;
+  }
+  
+  .feature__comment {
+    margin-top: 25px;
+  }
 }
 
 .feature__info {
@@ -27,7 +41,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 0;
     width: 39px;
     height: 35px;

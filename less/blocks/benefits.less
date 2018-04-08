@@ -1,6 +1,5 @@
 .benefits {
   padding-top: 20px;
-  padding-bottom: 20px;
   background-image: url(../img/bg-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -8,19 +7,28 @@
 }
 
 .benefits__list {
+  margin-top: 55px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
 }
 
 .benefits__item {
   width: 33%;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  
+  &:nth-child(3n) {
+    padding-left: 20px;
+    
+    p {
+      max-width: 260px;
+    }
+  }
   
   p {
     max-width: 300px;
