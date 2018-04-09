@@ -5,3 +5,21 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(50%, 0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
