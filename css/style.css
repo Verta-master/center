@@ -498,7 +498,7 @@ button {
   margin-right: 40px;
 }
 .promo__info {
-  margin-top: 150px;
+  margin-top: 215px;
   text-align: center;
 }
 .promo__title {
@@ -1215,6 +1215,49 @@ button {
 .social__item:hover,
 .social__item:active {
   opacity: 0.8;
+}
+.sidemenu {
+  position: fixed;
+  right: 60px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.sidemenu__item {
+  margin-bottom: 35px;
+}
+.sidemenu__item:last-child .sidemenu__link::before {
+  display: none;
+}
+.sidemenu__link {
+  display: block;
+  color: #c66b6d;
+  font-size: 18px;
+  text-align: right;
+  padding-right: 25px;
+  position: relative;
+}
+.sidemenu__link::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #c66b6d;
+}
+.sidemenu__link::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 1px;
+  height: 44px;
+  background-color: #c66b6d;
+}
+.sidemenu__link--active::after {
+  background-color: #c66b6d;
 }
 @media (max-width: 1238px) {
   .wrapper {
