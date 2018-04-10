@@ -398,6 +398,7 @@ body {
   font-weight: 300;
   color: #999999;
   letter-spacing: 0.05em;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -446,24 +447,24 @@ button {
   from {
     -webkit-transform: translate3d(50%, 0, 0);
             transform: translate3d(50%, 0, 0);
-    opacity: 0;
+    visibility: hidden;
   }
   to {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-    opacity: 1;
+    visibility: visible;
   }
 }
 @keyframes slideInRight {
   from {
     -webkit-transform: translate3d(50%, 0, 0);
             transform: translate3d(50%, 0, 0);
-    opacity: 0;
+    visibility: hidden;
   }
   to {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-    opacity: 1;
+    visibility: visible;
   }
 }
 .slideInRight {
@@ -1258,6 +1259,11 @@ button {
 }
 .sidemenu__link--active::after {
   background-color: #c66b6d;
+}
+@media (max-width: 1700px) {
+  .sidemenu {
+    display: none;
+  }
 }
 @media (max-width: 1238px) {
   .wrapper {
